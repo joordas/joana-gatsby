@@ -12,7 +12,7 @@ const PanelWrapper = styled.div`
   margin: 0 auto 15px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.08);
   margin-top: 0px;
-  padding: 30px 20px;
+  padding: ${props => props.padding};
 `;
 
 const PanelTitle = styled.h2`
@@ -28,8 +28,10 @@ const PanelTitle = styled.h2`
   }
 `;
 
-const PanelContentContainer = styled.div``;
-
+const PanelContentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 class Panel extends Component {
   render() {
     const panelTitle = this.props.title ? (
@@ -38,7 +40,7 @@ class Panel extends Component {
       </PanelTitle>
     ) : null;
     return (
-      <PanelWrapper>
+      <PanelWrapper padding={this.props.padding}>
         {panelTitle}
         <PanelContentContainer>{this.props.children}</PanelContentContainer>
       </PanelWrapper>

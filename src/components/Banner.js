@@ -21,7 +21,12 @@ const Banner = () => (
     >
       Wada & Araujo Advogadas
     </h1>
-    <Button to="/" buttonText="Entre em contato" uppercase />
+    <Button
+      to="/"
+      buttonText="Entre em contato"
+      slidingIcon="&#8594;"
+      uppercase
+    />
   </BannerWrapper>
 );
 

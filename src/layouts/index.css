@@ -36,3 +36,8 @@ body::before {
 a.no-decoration {
   text-decoration: none;
 }
+
+.slidingIcon {
+  transition-duration: 0.3s;
+  margin-left: 10px;
+}

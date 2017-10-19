@@ -15,6 +15,9 @@ const ButtonContainer = styled.div`
   &:hover {
     transform: translateY(-2px);
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.23);
+    span.slidingIcon {
+      margin-left: 20px;
+    }
   }
 `;
 
@@ -26,6 +29,7 @@ const Button = props => (
       uppercase={props.uppercase}
     >
       {props.buttonText}
+      <span className="slidingIcon">{props.slidingIcon}</span>
     </ButtonContainer>
   </Link>
 );
