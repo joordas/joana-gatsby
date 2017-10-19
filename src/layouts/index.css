@@ -1,0 +1,38 @@
+body {
+  background-color: white;
+  overflow: hidden !important;
+  z-index: -100;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  background: #dd5a5a33;
+  width: 2500px;
+  height: 2500px;
+  transform: rotate(45deg);
+  z-index: -10;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -80vw;
+  background: #ad2a2aee;
+  width: 2500px;
+  height: 2500px;
+  transform: rotate(45deg);
+  z-index: -11;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+a.no-decoration {
+  text-decoration: none;
+}
