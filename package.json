@@ -9,7 +9,9 @@
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
-    "google-maps-react": "^1.1.0"
+    "google-map-react": "^0.24.0",
+    "google-maps-react": "^1.1.0",
+    "react-icons": "^2.2.7"
   },
   "keywords": [
     "gatsby"

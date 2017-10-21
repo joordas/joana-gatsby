@@ -5,9 +5,8 @@ import styled from "styled-components";
 import { colors } from "../variables";
 
 const PanelWrapper = styled.div`
-  height: 500px;
   width: 97vw;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: white;
   margin: 0 auto 15px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.08);
